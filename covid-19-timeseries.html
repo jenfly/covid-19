@@ -13084,6 +13084,7 @@ div#notebook {
 </ul>
 </li>
 <li>For details of this analysis: <a href="https://nbviewer.jupyter.org/github/jenfly/covid-19/blob/master/covid-19-timeseries.ipynb">Jupyter notebook</a> and <a href="https://github.com/jenfly/covid-19">Github repo</a></li>
+<li>To jump to my concluding thoughts, <a href="#conclusions">click here</a></li>
 </ul>
 <p>Last updated:</p>
 
@@ -13239,7 +13240,9 @@ if (outputEl) {{
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>However, even though France, Spain, Germany, and USA currently have relatively lower numbers, their case counts are all growing exponentially just as Italy has been. We can see this clearly when we plot the data with a logarithmic y-axis scale, as shown below, where a straight line indicates exponential growth. The doubling time of the growth in a country can be estimated by comparing the slope of its line with the reference lines shown for various doubling times.</p>
-<p>We can see that case counts in these countries are all growing just as fast as Italy, with doubling times of about 2-4 days. They're all on the same trajectory, Italy is just a bit further ahead (about 6-9 days, depending on the country). If nothing is done to slow down the spread of COVID-19 in these countries, or if mitigation measures are ineffective, the case counts in these countries will soon be as high as Italy's are today.</p>
+<p>We can see that case counts in these regions are all growing just as fast as Italy, with doubling times of about 2-4 days. They're all on the same trajectory, Italy is just a bit further ahead (about 6-9 days, depending on the country). If nothing is done to slow down the spread of COVID-19 in these countries, or if mitigation measures are ineffective, the case counts in these countries will soon be as high as Italy's are today.</p>
+<blockquote><p>Note: The y-axis in the graphs above and below is "Days Since 100th Case". For most regions (except Hong Kong and Singapore, as discussed below), this roughly represents the time when the region has transitioned from a) mostly occasional imported cases and isolated small clusters towards b) widespread community transmission.</p>
+</blockquote>
 
 </div>
 </div>
@@ -13861,6 +13864,59 @@ if (outputEl) {{
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id="conclusions"></a></p>
+<h2 id="Concluding-Thoughts">Concluding Thoughts<a class="anchor-link" href="#Concluding-Thoughts">&#182;</a></h2><p>Based on my own analysis and the many news articles I've been reading, here are my conclusions on the COVID-19 pandemic so far. I've including links to some of the articles above, and will try to dig up some of the others and compile them here in a future update.</p>
+<ul>
+<li>Whether it's China, South Korea, Italy, Spain, USA, Canada or any other country, <strong>if the spread of COVID-19 is uncontrolled or poorly controlled, the number of cases grows exponentially at a doubling time of about 2-4 days. There is zero reason for any country to believe that it will somehow magically be the exception to this.</strong></li>
+<li>This rapid spread combined with the fraction of cases requiring hospitalization (apparently about 10-20% based on most of the data we have so far) and intensive care (apparently about 5% of cases) is enough to overwhelm any heathcare system within several weeks from the time that widespread community transmission is established.</li>
+<li>The tipping point for healthcare system overload will be different from country to country&mdash;it may be 5000 active cases in one country vs. 20,000 active cases in another. But the exact numbers really don't matter much because of the rapid exponential growth. At a 4-day doubling time, once you've reached 5000 cases, it's only 8 more days until you reach 20,000.</li>
+<li>Same goes for the uncertainties in the fraction of cases requiring hospitalization/intensive care. If only 1% of people require intensive care (ICU), for example, healthcare system overload just happens a few days or weeks later than it would have at 5% ICU fraction.</li>
+<li>For example, suppose Country A and Country B each currently have 100 cases. Country A's healthcare system will be overloaded when the number of (ICU) cases exceeds 100, while Country B is overloaded at 1000 ICU cases.<ul>
+<li>Assuming a 4-day doubling time and ICU cases are 5% of the total, country A's healthcare system will be overloaded within 18 days when its cases reach 2000+, while Country B will be overloaded within 31 days when its cases reach 20,000+.</li>
+<li>Optimistically assuming the same doubling time but ICU cases only 1% of the total, then Country A is overloaded within 27 days and Country B is overloaded within 40 days.</li>
+<li>If the doubling time is closer to 2 days, then the number of cases grows even faster and overload happens even sooner.</li>
+</ul>
+</li>
+<li>The country-wide totals discussed above are an over-simplification. With regional variations in healthcare capacity within a country, and localized outbreaks (such as the current situations in Seattle, New York City, and other places), local healthcare systems can be overwhelmed even sooner than the estimates based on country-wide totals.</li>
+</ul>
+<p>I see the COVID-19 pandemic as having evolved in several stages so far:</p>
+<h4 id="1.-China-outbreak-(Jan-Feb)">1. China outbreak (Jan-Feb)<a class="anchor-link" href="#1.-China-outbreak-(Jan-Feb)">&#182;</a></h4><ul>
+<li>The new virus emerges and spreads rapidly in Wuhan and into the rest of Hubei province. Initial spread is uncontrolled because COVID-19 is brand new and not on anyone's radar, and this is exacerbated by the government actively suppressing any information about the virus for the first several weeks.</li>
+<li>Once the epidemic is revealed to healthcare workers and the general public, and drastic containment measures are enacted, the rapid exponential growth of cases continues for a while due to various factors, such as the large number of cases already, shortage of testing kits, long incubation period of the virus, etc.</li>
+<li>Eventually the lockdowns and other containment/mitigation measures succeed in drastically slowing the spread of COVID-19, curbing the outbreak in China and delaying large-scale spread to other countries.</li>
+<li><strong>Meanwhile, Taiwan, Hong Kong, and Singapore hear about the new virus and take the threat very seriously</strong>. They take decisive, early action, enacting the pandemic preparedness plans they had developed after previous outbreaks such as SARS and MERS. Their responses include measures such as: aggressive restrictions on travel into their region; extensive testing and contact tracing; focused quarantines of infected individuals; social distancing; stockpiling personal protective equipment; providing face masks to the public for free or low cost; temperature screening of people in public places; widespread public information campaigns with consistent messaging; and using big data and various technologies to assist with disease tracking, risk assessment, public communication, etc.</li>
+<li>In other regions such as USA, Canada, and European countries, the responses consist of: some testing/contact tracing/quarantines of infected individuals, and travel restrictions in some countries. <strong>Overall, the responses of Western countries are mainly guided by wishful thinking, a "wait and see" attitude, and a prioritization of the economy over public health.</strong></li>
+</ul>
+<h4 id="2.-South-Korea-and-Italy-outbreaks-(late-Feb-present)">2. South Korea and Italy outbreaks (late Feb-present)<a class="anchor-link" href="#2.-South-Korea-and-Italy-outbreaks-(late-Feb-present)">&#182;</a></h4><ul>
+<li>After the lockdowns in China gave the rest of the world a short delay in widespread COVID-19, the case counts in other countries inevitably start to rise. In late February, cases begin to skyrocket in both South Korea and Italy. As these outbreaks evolved, the trajectories of the two countries diverge rapidly due to their different responses:<ul>
+<li>Initially, South Korea is more relaxed in its COVID-19 response than its neighbours in Taiwan, Hong Kong, and Singapore. However, as soon as it becomes apparent that an outbreak is brewing in Daegu, South Korea quickly ramps up its testing capacity to 10,000 people per day (and now even higher, up to 20,000 people per day). Their extensive testing program differs from Western countries not just in its huge scale but also because it includes testing of people with mild or no symptoms. <strong>Their guiding principle is to detect <em>all</em> cases, including mild/asymptomatic ones which could be contributing to the spread of the virus as much as (or possibly even more than) the severe cases.</strong></li>
+<li>In addition to aggressive testing and contact tracing, South Korea quickly starts to implement many of the other strategies already employed by their neighbours in Hong Kong/Singapore/Taiwan: focused quarantines, social distancing, public information campaigns, leveraging big data and technology, etc.</li>
+<li>Growth of COVID-19 cases in South Korea has slown drastically since the beginning of March and <strong>so far, it appears that South Korea has managed to curb its outbreak without resorting to draconian measures such as lockdowns that severely restrict the movement of people within entire communities and/or the whole country.</strong></li>
+<li>Meanwhile in Italy, as the outbreak grows in the Lombardy region, governments are slow to enact measures such as social distancing. Testing efforts are substantial, but still not extensive enough to keep up with the explosion of cases. Efforts such as contact tracing and focused quarantines of infected people soon become ineffective due to the huge growth in both reported cases and undetected cases. The healthcare system becomes overloaded and is on the brink of collapse.</li>
+<li>Now Italy has followed China's lead with a country-wide lockdown. Cases continue to skyrocket, but will likely slow down within a week or so, as the effects of the lockdown start to kick in and eventually curb the outbreak. <strong>Now Italy will suffer from not only the devastation of unnecessary deaths from healthcare system overload, but also the upcoming severe economic damage from the draconian lockdown.</strong></li>
+</ul>
+</li>
+<li>During this time, a huge outbreak has also been growing in Iran. Although the situation in this country is also very dire, I haven't focused my data analysis efforts on it because it is likely that the reported numbers are wildly inaccurate, grossly underreporting the number of cases and deaths.</li>
+<li>Meanwhile, western countries see what's happening in Italy, South Korea, and Iran, and continue to hope that those countries are just outliers. For the first 1-2 weeks of March, the attitude in many places seems to be "well, our numbers are still low, so hopefully we can continue without any drastic measures and we'll be okay". As recently as a few days ago, I was still seeing headlines like <a href="https://www.bbc.co.uk/news/amp/uk-51858987">Coronavirus: Three reasons why the UK might not look like Italy</a> (March 13) and <a href="https://nationalpost.com/news/world/ignoring-coronavirus-fears-3500-people-dressed-as-smurfs-gather-in-france-to-break-record?video_autoplay=true">Ignoring coronavirus fears, 3,500 people dressed as Smurfs gather in France to break record</a> (March 12).</li>
+<li>In Hong Kong/Taiwan/Singapore, cases counts remain very low. Restaurants and other businesses are much quieter than they normally would have been, but most remain open. Daily life for residents goes on, mostly undisrupted. </li>
+</ul>
+<h4 id="3.-The-world-finally-wakes-up-(mid-March)">3. The world finally wakes up (mid-March)<a class="anchor-link" href="#3.-The-world-finally-wakes-up-(mid-March)">&#182;</a></h4><ul>
+<li>Around mid-March, an explosion of cases in Spain, France, Germany, USA, and elsewhere seems to have woken up the rest of the world, at long last. As countries finally realize that their rapid exponential growth in cases puts them on the exact same trajectory as Italy, they are scrambling to implement social distancing and enhance travel restrictions.</li>
+<li>The coming weeks will reveal how effective (or ineffective) these measures will be. We all want to avoid getting to the point where Italy is right now, but I expect that social distancing and travel restrictions alone will not be sufficient in countries where the case counts are already in the thousands. Perhaps they will be enough in countries which currently have lower counts, like Canada, but I wouldn't count on it.</li>
+<li>In an ideal world, all developed countries would have used their resources to implement a gold standard pandemic response such as Singapore/Hong Kong/Taiwan. Ideally we would have had robust pandemic preparedness plans already developed in previous years as these regions did, and we would have recognized the seriousness of the COVID-19 threat from the beginning and put those plans into action early on. <ul>
+<li>In this ideal scenario, the early investment of resources to prevent widespread outbreaks in developed countries would prevent not only a public health crisis but also mitigate the economic damage by avoiding the need for widespread lockdowns that grind the economy almost to a halt. This in turn, could potentially leave more resources available for developed countries to assist the COVID-19 responses of developing countries with much weaker healthcare systems.</li>
+</ul>
+</li>
+<li>But we don't have a time machine, so the gold standard option is off the table. As a next best response, I think we would all be wise to follow the lead of South Korea, with aggressive testing (including mild/asymptomatic cases), focused quarantines, widespread public information campaigns with consistent messaging, etc. Unfortunately, most countries seem to be going in the opposite direction: limiting testing programs by restricting them to only those people with severe symptoms, continuing to provide minimal information to the public and lots of mixed messaging from different levels of government and different jurisdictions, and so on.</li>
+<li>We'll see how that approach pans out, but I expect it will eventually result in many more countries needing to resort to draconian measures to get their situation under control, and suffering the accompanying severe economic damage. It didn't have to be this way! But here we are.</li>
+</ul>
+
+</div>
+</div>
 </div>
     </div>
   </div>
