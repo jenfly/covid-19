@@ -13029,6 +13029,8 @@ body {
 div#notebook {
   overflow: visible;
   border-top: none;
+}div#notebook-container{
+  padding: 6ex 12ex 8ex 12ex;
 }@media print {
   div.cell {
     display: block;
@@ -13074,8 +13076,7 @@ div#notebook {
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="COVID-19-Data-Analysis">COVID-19 Data Analysis<a class="anchor-link" href="#COVID-19-Data-Analysis">&#182;</a></h1><p>By Jennifer Walker</p>
 <ul>
@@ -13114,8 +13115,7 @@ div#notebook {
 <div class="cell border-box-sizing code_cell rendered">
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Comparison-of-Growth-Trajectories">Comparison of Growth Trajectories<a class="anchor-link" href="#Comparison-of-Growth-Trajectories">&#182;</a></h2><h3 id="Italy-is-NOT-an-Outlier!">Italy is NOT an Outlier!<a class="anchor-link" href="#Italy-is-NOT-an-Outlier!">&#182;</a></h3><p>In three weeks, the number of COVID-19 cases in Italy skyrocketed from 155 on February 23 to almost 25,000 on March 15.</p>
 <table>
@@ -13236,8 +13236,7 @@ if (outputEl) {{
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>However, even though France, Spain, Germany, and USA currently have relatively lower numbers, their case counts are all growing exponentially just as Italy has been. We can see this clearly when we plot the data with a logarithmic y-axis scale, as shown below, where a straight line indicates exponential growth. The doubling time of the growth in a country can be estimated by comparing the slope of its line with the reference lines shown for various doubling times.</p>
 <p>We can see that case counts in these regions are all growing just as fast as Italy, with doubling times of about 2-4 days. They're all on the same trajectory, Italy is just a bit further ahead (about 6-9 days, depending on the country). If nothing is done to slow down the spread of COVID-19 in these countries, or if mitigation measures are ineffective, the case counts in these countries will soon be as high as Italy's are today.</p>
@@ -13307,8 +13306,7 @@ if (outputEl) {{
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="We-Can-Learn-a-Lot-from-Taiwan,-Hong-Kong,-Singapore-and-Korea">We Can Learn a Lot from Taiwan, Hong Kong, Singapore and Korea<a class="anchor-link" href="#We-Can-Learn-a-Lot-from-Taiwan,-Hong-Kong,-Singapore-and-Korea">&#182;</a></h3><p>Notice also, in the graph above, how low the case counts are in Singapore and Hong Kong, and how slowly they are growing. The same is true for Taiwan, in fact its numbers are so low that it doesn't even make it onto the graph because it hasn't reached 100 cases yet. This is not a coincidence! These regions all took decisive action early on and have managed to drastically slow down the spread of COVID-19 without resorting to draconian measures such as lockdowns. More details <a href="https://www.wired.com/story/singapore-was-ready-for-covid-19-other-countries-take-note/">here</a> and <a href="https://www.nbcnews.com/health/health-news/what-taiwan-can-teach-world-fighting-coronavirus-n1153826">here</a>.</p>
 <p>South Korea was a little less aggressive in the early stages, but when cases started skyrocketing, they quickly switched tactics. With measures such as extensive testing (far higher than any other country), focused quarantines, and other tactics, they seem to have effectively curbed their outbreak, also without resorting to draconian measures. More details <a href="https://www.scmp.com/week-asia/health-environment/article/3075164/south-koreas-coronavirus-response-opposite-china-and">here</a>.</p>
@@ -13383,8 +13381,7 @@ if (outputEl) {{
 <div class="cell border-box-sizing code_cell rendered">
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Doubling-Times">Doubling Times<a class="anchor-link" href="#Doubling-Times">&#182;</a></h3><p>The graph below shows the approximate doubling times in the number of cases for various countries in recent weeks. To give a sense of what doubling times mean, if we have 1000 cases now, then:</p>
 <ul>
@@ -13456,8 +13453,7 @@ if (outputEl) {{
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>As the outbreak evolves, doubling times can change. Over the period Feb 1-29, the doubling time of cases in South Korea was approximately 2.3 days. From Mar 1-15, as mitigation measures started to drastically slow the outbreak, the doubling time was about 16.6 days.</p>
 <p>Another reason doubling times might change is when testing efforts ramp up and a larger fraction of cases are detected, i.e. the reported cases start to catch up with the actual cases (many of which were previously undetected). This might be the reason for such fast growth in the early stages of Italy's outbreak (2.1-day doubling time from Feb 1-29) compared to the current growth (3.8-day doubling time from Mar 1-15).</p>
@@ -13528,8 +13524,7 @@ if (outputEl) {{
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Projections">Projections<a class="anchor-link" href="#Projections">&#182;</a></h3><p>By fitting each country's data to an exponential curve ($y=e^{kt}$), we can model the growth in cases and make (tentative!) predictions for the coming weeks. An example model is shown below for Italy, based on the data from March 1 to present.</p>
 
@@ -13596,8 +13591,7 @@ if (outputEl) {{
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>The graph below shows the models for various countries, where each model is based on the country's data from March 1 to present. Each model predicts how the number of cases will grow if there are no significant changes in the country's handling of the outbreak.</p>
 <p>We can see that by April 1, Canada, USA, and various European countries are predicted to reach 20,000+ cases (an arbitrary milestone I've chosen to represent a "big" number). Some countries, like Spain and Germany are predicted to hit that milestone much sooner (3-5 days).</p>
@@ -13667,8 +13661,7 @@ if (outputEl) {{
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Italy-vs.-China">Italy vs. China<a class="anchor-link" href="#Italy-vs.-China">&#182;</a></h3><p>How does the situation in Italy compare with the original outbreak in China? In the graphs below, we can see that the growth in cases is similar, as are the growth in deaths.</p>
 
@@ -13795,8 +13788,7 @@ if (outputEl) {{
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Global-Totals">Global Totals<a class="anchor-link" href="#Global-Totals">&#182;</a></h3><p>The graph below shows the global totals of new COVID-19 cases and deaths per day. For the first month, approximately, the totals are dominated by China. After that, we enter a new phase where the totals are dominated by countries outside of China. In this current phase, as the virus spreads across the globe and the pandemic ramps up, the latest daily rates of new cases and new deaths are much higher than those reported during the peak of China's outbreak.</p>
 <blockquote><p>Note: The big spike in daily cases on Feb 13 is due to China's change in reporting methods, catching up on a backlog of unreported cases from testing shortages.</p>
@@ -13865,8 +13857,7 @@ if (outputEl) {{
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><a id="conclusions"></a></p>
 <h2 id="Concluding-Thoughts">Concluding Thoughts<a class="anchor-link" href="#Concluding-Thoughts">&#182;</a></h2><p>Based on my own analysis and the many news articles I've been reading, here are my conclusions on the COVID-19 pandemic so far. I've including links to some of the articles above, and will try to dig up some of the others and compile them here in a future update.</p>
